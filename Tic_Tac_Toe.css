@@ -1,0 +1,109 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to left top, rgb(108, 108, 252), rgb(248, 83, 83));
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-transform: uppercase;
+    /* font-weight:bold; */
+    font-family: cursive;
+    color: whitesmoke;
+    /* animation: typing 16s linear, blink .8s; */
+    text-shadow: 1px 4px 6px rgb(235, 245, 99);
+    margin-top: auto;
+}
+
+#gameboard{
+    width: 40%;
+    height: 320px;
+}
+#gameboard td{
+    border: 1px solid rgb(69, 94, 45);
+    border-collapse: collapse;
+    /* background-color: rgb(57, 70, 75); */
+    background: transparent;
+    border-radius: 20px;
+    width: 30%;
+    height: 31%;
+}
+#game_container{
+    width: 50%;
+    /* display: inline-block; */
+    margin-top: 1em;
+    text-align: center;
+}
+#game_container td{
+    border-collapse: collapse;
+}
+#scores-title{
+    font-size: 1.1em;
+}
+#game_container caption{
+    font-size: 1.6em;
+}
+.scores{
+    margin-top: 1em;
+    font-size: 2.5em;
+    color: orangered;
+}
+label{
+    display: inline-block;
+    margin: 1em 0.1em;
+    font-size: 1.5em;
+}
+input[type="text"]{
+    display: inline-block;
+    width: 90%;
+    background-color: darkorange;
+    border-radius: 10xp;
+    padding: 0.6em;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    justify-content: center;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="text"]:hover{
+    background: rgb(252, 163, 54);
+    border-radius: 20px;
+    
+}
+.move{
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+.correct{
+    color: limegreen;
+}
+h4{
+    font-size: 1.3em;
+    margin-top: -0.1em;
+}
+#restart {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1.3em;
+    background-color: darkorange;
+    font-size: 1.3em;
+}
+#restart:hover{
+    cursor: pointer;
+    color: white;
+    background-color: orangered;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
